@@ -1,0 +1,687 @@
+/* ============================================================================================ */
+/* ===                                *DARK*    ^_^                                         === */
+/* ============================================================================================ */
+/*
+
+	========================
+	==		CONTENTS:     ==
+    ========================
+
+	- GLOBAL STYLES
+		- body background
+		- link styles
+		- heading styles
+
+	- LAYOUT STYLES;
+	 	- site body
+	 	- page body		
+
+	- HEADER STYLES
+		- meta menu
+		- header background
+
+	- MAIN MENU STYLES
+		- menu background
+		- top level link styles
+		- drop down menu styles
+
+	
+	
+*/
+/* ====== GLOBAL STYLES======================================================================== */
+
+	/* ~~~~~ Body Background ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+		
+		#container {
+			background: #000;
+			color:#fff;
+			}
+
+	/* ~~~~~ Link Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+		a, a:link, a:visited { 
+			color: #6ba1f6;
+			}
+
+		a:focus, a:active, a:hover { 
+			color: #6ba1f6;
+			}
+			
+		a div.a-i {olor: #6ba1f6!important;}
+	/* ~~~~~ Heading Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+		h1, h2, h3, h4, h5, h6{
+			color: #fff;
+			}
+
+			.module h1,
+			.module h2,
+			.module h3,
+			.module h4,
+			.module h5,
+			.module h6 {
+				color: inherit;
+			}
+	h2{font-size:28.5px;}  /* Fixed Master template making h2 too large */
+
+/* ======= end of GLOBAL STYLES ========================================================= */
+
+
+/* ====== BUTTON STYLES  ================================================================ */
+
+			/* ~~~~~ Default Buttons ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+			#container input[type=submit],
+			#container input[type=reset],
+			#container input[type=button],
+			#container button,
+			#container .btn,
+			#container .homelinks article a,
+			#container .module_propertycontact button{
+				background: #fccc5c;
+				color: #000!important;
+			
+			}
+
+			/* Hover Buttons */
+			#container input[type=submit]:focus,
+			#container input[type=submit]:active,
+			#container input[type=submit]:hover,
+			#container input[type=reset]:focus,
+			#container input[type=reset]:active,
+			#container input[type=reset]:hover,
+			#container input[type=button]:focus,
+			#container input[type=button]:active,
+			#container input[type=button]:hover,
+			#container button:focus,
+			#container button:active,
+			#container button:hover,
+			#container .btn:focus,
+			#container .btn:active,
+			#container .btn:hover,
+			#container .homelinks article a:focus,
+			#container .homelinks article a:active,
+			#container .homelinks article a:hover,
+			#container .module_propertycontact button:focus,
+			#container .module_propertycontact button:active,
+			#container .module_propertycontact button:hover{
+				background: ffe293; color: #000!important;
+			}
+
+
+
+
+
+
+/* ====== end of BUTTON STYLES  ===================================================== */
+
+
+
+
+/* ====== LAYOUT STYLES  =========================================================== */
+
+	
+
+	/* ----- Site Body --------------------------------------------------------*/
+
+	/* Wraps everything between Header and Footer in 980px fixed width div*/
+
+		body #container > #body{}
+	
+
+	/* ----- Page Body ------------------------------------------------------------- */
+
+	/* Allows you to specifiy styles for the Main Content and Right Col for the whole site.*/
+
+	#container .module.module_templatepage {padding:1em;}
+    #container .module.module_formpage {padding:1em;}
+	#container .PH_NeighborhoodReportPlaceHolder{padding:1em;}
+
+		/* ~~~~~ Main Column ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+			body #container #body #col-center.col{}
+				body #container #body #col-center.col > .pos{
+					padding:1em;
+				}
+
+
+		/* ~~~~~ Right Column ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+			body #container #body #col-side-b.col{}
+				body #container #body #col-side-b.col > .pos{
+					padding: 1em;
+				}
+
+
+	
+	/* flips right column to the left column */
+		/*
+		#container #body #col-side-b {clear:left; }  
+		#container #body #col-center {float: right;}
+		*/			
+
+/* ====== end of  LAYOUT STYLES  ====================================================== */
+
+
+
+
+
+
+/* ====== HEADER STYLES ===================================================================== */
+
+	/* ~~~~~ Meta Menu (Home - Contact - My Home Tracker -- Log In) ~~~~~~~~~~~~~~ */
+	
+		#nav_head{ }
+
+			 #nav_head ul{ 
+				width: 25%;
+				margin: .5em;
+				}
+				 #nav_head ul li{}
+
+					/* Regular Links */
+					#nav_head ul li a,
+					#nav_head ul li a:link,
+					#nav_head ul li a:visited{ color: #fff; }
+
+					/* Hover Links */
+					#nav_head ul li a:focus,
+					#nav_head ul li a:active,
+					#nav_head ul li a:hover{ }
+
+
+	
+	/* ~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+	/*
+		A Note on Header Backgrounds:  
+			-To set background 100% across, set background on  <header>.
+			-To set background on fixed width 980px part, set background on  header > .pos
+			- header > .pos had default height of 125px, so you may be to add height property
+	*/
+
+		 #container > header {	}
+			 #container > header > .pos{
+			 	height: 400px;
+				background: url(/CustomData/150017461/images/customheader.jpg) 0 0 no-repeat;
+			    
+			}
+			.module.module_branding{ display: none;}
+
+			/*  ----- For .module_branding styles.. check Module Styles.  -------*/
+
+/* ======= end of HEADER STYLES =============================================================== */
+
+
+
+
+
+
+
+
+
+/* ====== MAIN MENU STYLES ======================================================================= */
+
+	/*
+		A Note on Main Nav Backgrounds:  
+			-To set background 100% across, set background on #container > #nav_main
+			-To set background on fixed width 980px part, 
+				set background on  #container > #nav_main > .nav_main,  it WILL need !important 
+	*/
+
+			#container > #nav_main{
+				background: #000;
+				border:0;
+				/* NOTE: #nav_main has a border and a gray background by default */
+			}
+
+			#container > #nav_main > .nav_main{ background: #222222!important ;}
+				#container > #nav_main > .nav_main > ul{}
+
+
+
+
+	/* ~~~~~ Top Level Menu Item Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+		#container > #nav_main > .nav_main > ul > li{}
+
+			/* Top Level Menu Items - Regular State*/
+			#container > #nav_main > .nav_main > ul > li > a,
+			#container > #nav_main > .nav_main > ul > li >  a:link,
+			#container > #nav_main > .nav_main > ul > li > a:visited,
+			#container > #nav_main > .nav_main > ul > li.ui-menu-item > a,
+			#container > #nav_main > .nav_main > ul > li.ui-menu-item > a:link,
+			#container > #nav_main > .nav_main > ul > li.ui-menu-item > a:visited{
+					color:#fff ; 				
+				}
+
+			/* Top Level Menu Items - Hover State */
+			#container > #nav_main > #ui-active-menuitem,
+			#container > #nav_main > .nav_main > ul > li > a:focus,
+			#container > #nav_main > .nav_main > ul > li > a.ui-state-focus,
+			#container > #nav_main > .nav_main > ul > li > a:active,
+			#container > #nav_main > .nav_main > ul > li > a.ui-state-active,
+			#container > #nav_main > .nav_main > ul > li > a:hover,
+			#container > #nav_main > .nav_main > ul > li > a.ui-state-hover,
+			#container > #nav_main > .nav_main > ul > li > a.ui-active-menuitem {
+				color:#fff ;  
+			}
+
+	 /* ~~~~~ Drop Down Menu Styles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+			#container > #nav_main > .nav_main > ul > li > ul{}
+			#container > #nav_main > .nav_main > ul > li > ul > li{}
+
+			/* Regular Links */
+			#container > #nav_main > .nav_main > ul > li > ul > li > a,
+			#container > #nav_main > .nav_main > ul > li > ul > li > a:link,
+			#container > #nav_main > .nav_main > ul > li > ul > li > a:visited{
+				color: #fff;
+				background: #222222; 
+			
+			}
+
+			/* Hover Links */
+			#container > #nav_main > .nav_main > ul > li > ul > li > a:focus,
+			#container > #nav_main > .nav_main > ul > li > ul > li > a:active,
+			#container > #nav_main > .nav_main > ul > li > ul > li > a:hover {
+				background: #000; 
+			}
+				
+					
+			/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+          
+/* ======= end of MAIN MENU STYLES ============================================================= */
+
+
+
+
+
+/* ====== FOOTER STYLES ======================================================================= */
+
+		#container > footer {
+			background: #222;
+		}
+
+	/* ~~~~~ Footer Content Wrapper ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */			
+
+		#container > footer  > .pos{
+				color:#fff !important; 
+				width: 980px; 
+				margin: 0 auto;
+				padding-top:10px;
+				}				
+
+	/* ~~~~~ Business Card ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+	    #container > footer  .module.module_bizcard{}
+		/* Header */
+		#container > footer  .module.module_bizcard > header{margin-bottom:5px;} 
+
+			/* Title */
+		
+	
+		#container > footer  .module.module_bizcard > header > * ,	
+		 #container > footer  .module.module_bizcard > header hgroup > *{}
+
+		#container > footer  .module.module_bizcard > section,
+		#container > footer  .module.module_bizcard > .content{} 
+
+		/* Address */
+		 #container > footer  .module.module_bizcard > section .adr,
+		#container > footer  .module.module_bizcard > .content .adr { 
+			color:#fff !important;}  
+		
+
+
+	/* ~~~~~ Custom Content ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+	 	#container > footer  .module.module_customcontent{}
+		/* Header (works on default content only) */
+		#container > footer  .module.module_customcontent > header{}
+		/* Title (works on default content only) */
+		#container #body #col-center .module  h2,
+		#container #body #col-center .module  h3,
+		#container #body #col-center .module > header > *,
+		#container #body #col-center .module > header hgroup > * { color: #fff; }
+
+		/* Content */
+		#container > footer  .module.module_customcontent > section,
+		#container > footer  .module.module_customcontent > .content{}
+
+
+	/* ~~~~~ Disclaimer Module ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+	#container > footer > .pos .module.module_disclaimer{}
+		/* Content */
+		#container > footer > .pos .module.module_disclaimer > section,
+		#container > footer > .pos .module.module_disclaimer > .content{}
+			/* Default Text */
+			#container > footer > .pos .module.module_disclaimer small{}
+			/* Credit Text */
+			#container > footer > .pos .module.module_disclaimer .credits{}
+			/* Copyright Text */
+			#container > footer > .pos .module.module_disclaimer .copyright{}
+				/* Regular Links */
+				#container > footer > .pos .module.module_disclaimer a,
+				#container > footer > .pos .module.module_disclaimer a:link,
+				#container > footer > .pos .module.module_disclaimer a:visited{}
+				/* Hover Links */
+				#container > footer > .pos .module.module_disclaimer a:focus,
+				#container > footer > .pos .module.module_disclaimer a:active,
+				#container > footer > .pos .module.module_disclaimer a:hover{}
+
+
+		/* ~~~~~ Footer Link Module ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+				
+		#container > footer > .pos .module.module_footerlinks{}
+			/* Content */
+			#container > footer > .pos .module.module_footerlinks > section,
+			 #container > footer > .pos .module.module_footerlinks > .content{}
+				/* List */
+				 #container > footer > .pos .module.module_footerlinks ul{}
+					/* List Items */
+					 #container > footer > .pos .module.module_footerlinks ul li{}
+					/* Sitemap Item */
+					 #container > footer > .pos .module.module_footerlinks .sitemap a{background-color:#fccc5c; color:#000;}
+					/* Login Item */
+					 #container > footer > .pos .module.module_footerlinks .loginlink{}
+						/* Regular Links */
+						#container > footer > .pos .module.module_footerlinks ul li a,
+						#container > footer > .pos .module.module_footerlinks ul li a:link,
+						#container > footer > .pos .module.module_footerlinks ul li a:visited{}
+						/* Hover Links */
+						#container > footer > .pos .module.module_footerlinks ul li a:focus,
+						#container > footer > .pos .module.module_footerlinks ul li a:active,
+						#container > footer > .pos .module.module_footerlinks ul li a:hover{}
+
+
+/* ============================================================================== */
+
+
+
+
+
+/* ====== GLOBAL MODULE STYLES ========================================================= */
+
+/* ~~~~~ Begin Contact Form Module ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+			#col-side-a > .pos > .module.module_bizcard .agentphoto, #col-side-b > .pos > .module.module_bizcard .agentphoto, #col-side-a > .pos > .module.module_bizcard .agentphoto img, #col-side-b > .pos > .module.module_bizcard .agentphoto img{max-width:77%;}
+			/* Headers in col-side-b */
+			#col-side-b .module.module_bizcard header h3{color:#000 !important;}
+			#col-side-b .module.module_bizcard header{
+			padding:4px;
+			background-color:#fff !important; 
+			font-size:16px;
+			height:auto;
+			text-align:center;
+			color:#000 !important;
+			}
+			#col-side-b > .pos > .module > header > *{padding:4px;}
+			#col-side-b .module_propertycontact header h3, #col-side-b .module_scheduleshowing header h3, #col-side-b .module_mortgage header h3{
+			margin:0px;
+			padding:6px;
+			background-color:#fff !important;
+			color:black;
+			font-size:16px;
+			height:auto;
+			text-align:center;
+			color:#000 !important;
+			text-transform:capitalize;
+			}
+			#col-side-b .module_localareasearch header h3{
+			padding:6px;
+			background-color:#fff !important;
+			color:black;
+			font-size:16px;
+			height:auto;
+			text-align:center;
+			color:#000 !important;			
+			}
+			
+			/* Background of items in col-side-b */
+			#col-side-b .module.module_bizcard {
+			border:1px solid #fff;
+			margin-bottom:25px !important; 
+			} 
+			#col-side-b .module_propertycontact, #col-side-b .module_scheduleshowing, #col-side-b .module_mortgage{
+			border:1px solid #fff;
+			background-color:;
+			margin-bottom:25px !important;
+			position:relative;
+			}		
+			#col-side-b .module_localareasearch{border:1px solid #fff; background-color:;}
+			
+			/* Adjusts padding */
+			#col-side-a > .pos > .module > section, #col-side-b > .pos > .module > section, #col-side-a > .pos > .module > .content, #col-side-b > .pos > .module > .content{padding:.5em;}
+			#col-side-b .module.module_propertycontact section, #col-side-b .module.module_propertycontact div.content{padding:.5em;}
+
+		/* Label Text Color */
+			.module.module_propertycontact #RequestInfoSection fieldset label{color:#000;}
+/* Additional Listing/City/ZipCode styling */
+
+ .module.module_additionallisting, .module.module_nearbyCity, .module.module_nearbyZip{border:1px solid #fff;}
+			 .module.module_additionallisting h3, .module.module_nearbyCity h3, .module.module_nearbyZip h3{padding:5px; text-align:left; font-size:18px; color:#000 !important; background: url(/CustomData/150001578/images/barback.jpg) #E0E0E0;}
+			 .module.module_additionallisting section, .module.module_nearbyCity section, .module.module_nearbyZip section{padding:4px;}
+
+		/* ~~~~~ End Contact Form Module ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+		
+	/* ~~~~~ Homepage, Main Column ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+		#bd_home #container #body #col-center .module{}
+			/* Header */
+		#bd_home #container #body #col-center .module > header{}
+			/* Title */
+			#bd_home #container #body #col-center .module > header > *,
+			#bd_home #container #body #col-center .module > header hgroup > *{
+				color: #000!important;
+			}
+		/* Content */
+		#bd_home #container #body #col-center .module > section,
+		#bd_home #container #body #col-center .module > .content{} 
+
+		/* Footer */
+		#bd_home #container #body #col-center .module > footer{}
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+	/* ~~~~~ Homepage, Right Column ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+		#bd_home #container #body #col-side-b .module{
+				background: #222;
+				color:#fff;
+			}
+
+			/* Header */
+			#bd_home #container #body #col-side-b .module > header{}
+				/* Title */
+				#bd_home #container #body #col-side-b .module > header > *,
+				#bd_home #container #body #col-side-b .module > header hgroup > *{ 
+					color: #000!important;
+				}
+			/* Content */
+			#bd_home #container #body #col-side-b .module > section,
+			#bd_home #container #body #col-side-b .module > .content{}
+			/* Footer */
+			#bd_home #container #body #col-side-b .module > footer{}
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+	/* ~~~~~ Other Pages, Main Column ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+		#container #body #col-center .module{}
+			/* Header */
+			#container #body #col-center .module > header{}
+				/* Title */
+				#container #body #col-center .module h2,
+				#container #body #col-center .module h3,
+				#container #body #col-center .module > header > *,
+				#container #body #col-center .module > header hgroup > * { color: #fff; }
+			/* Content */
+			#container #body #col-center .module > section,
+			#container #body #col-center .module > .content{}
+			/* Footer */
+			#container #body #col-center .module > footer{}
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+	/* ~~~~~ Other Pages, Right Column ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+		#container #body #col-side-b .module{
+				background: #222;
+				color:#fff;	
+			}
+			/* Header */
+			#container #body #col-side-b .module > header{}
+				/* Title */
+				#container #body #col-center .module h2,
+				#container #body #col-center .module h3,
+				#container #body #col-center .module > header > *,
+				#container #body #col-center .module > header hgroup > * { color: #fff; }
+			/* Content */
+			#container #body #col-side-b .module > section,
+			#container #body #col-side-b .module > .content{}
+			/* Footer */
+			#container #body #col-side-b .module > footer{}
+	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+ /* ~~~~~  Home Page Module Selector Reference ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+	 #bd_home #container #body #col-center .module.module_featuredlisting {border:1px solid #fff; margin-top:8px;}
+	 #bd_home #container #body #col-center .module.module_featuredlisting section{padding:6px;}
+	 #bd_home #container #body #col-center .module.module_featuredlisting h3{padding:5px; text-align:left; font-size:18px; color:#000 !important; background-color:#fff;}
+	 #bd_home #container #body #col-center .module.module_featuredsearches{border:1px solid #fff;}
+	 #bd_home #container #body #col-center .module.module_featuredsearches h3{padding:5px; text-align:left; font-size:18px; color:#000 !important; background-color:#fff;}
+	 #bd_home #container #body #col-center .module.module_featuredsearches article {margin-bottom:10px; margin-left:20px;}
+	 #bd_home #container #body #col-center .module.module_search {marging-left: 70px;}
+	 #bd_home #container #body #col-center .module.module_customcontent{}
+	 #bd_home #container #body #col-side-b .module.module_bizcard {}
+	 #bd_home #container #body #col-side-b .module.module_propertycontact{}
+	 #bd_home #container #body #col-side-b .module.module_localpropertysearch,
+	 #bd_home #container #body #col-side-b .module.module_localareasearch{}
+	 #bd_home #container #body #col-side-b .homelinks{}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+  /* ~~~~~ Module Selector Reference ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+	 #container #body #col-center .module.module_featuredlisting{}
+	 #container #body #col-center .module.module_featuredsearches{}
+	 #container #body #col-center .module.module_search { }
+	 #container #body #col-center .module.module_customcontent{}
+	 #container #body #col-side-b .module.module_bizcard {}
+	 #container #body #col-side-b .module.module_propertycontact{}
+	 #container #body #col-side-b .module.module_localpropertysearch,
+	 #container #body #col-side-b .module.module_localareasearch{}
+	 #container #body #col-side-b .homelinks{}
+	 
+	 .module.module_valuesoptions section p, .module.module_valuesoptions .content p {color:#fff!important;}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* ====== MISC RESETS  ========================================================= */
+
+	
+	/*Removes outline on Search Module*/
+	.module.ui-tabs-panel {	border: 1px solid #fff;}
+
+	/* Remove white background from Search Mopdule on subpages */
+	.module.module_search { background: transparent; margin-left: 70px; }
+
+    /* Show Search Module Header */
+    .module.module_search > header { display:inline; color: #fff; margin-top:0px;}
+	.searchoptions a {background: #fccc5c!important; color: #000!important;}
+    /* ~~~~~~ Globally changes label color to white, plus resets back to black where needed.~~~~~~~~~~~~ */
+ 	label {color: #fff!important;}
+ 	.module.module_advanced_search label {color: #fff!important;}
+	#container > #body .module.module_advanced_search div a, #container > #body .module.module_advanced_search div a:active, #container > #body .module.module_advanced_search div a:visited, #container > #body .module.module_advanced_search fieldset label, #container > #body .module.module_advanced_search .filters li{color:white;}
+
+
+	/* ~~~~~~ Featured Listings Resets for Dark Color Schemes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+	    .module.module_featuredlisting .address,
+	    .module.module_featuredlisting .price,
+	    .module.module_featuredlisting .adr.fn { color: #fff; }
+	    .module.module_featuredlisting .buttons > .morelistings { color: #3867B1;}
+	   
+		.tooltip-maps .infowindow .pos.pos_listing .price, .tooltip-maps .infowindow .pos.pos_listing .col-b.address.vcard, .tooltip-maps .infowindow .courtesyof, .tooltip-maps .infowindow .mls, .tooltip-maps .infowindow .street-address, .tooltip-maps .infowindow .locality, .tooltip-maps .infowindow .region, .tooltip-maps .infowindow .postal-code, .tooltip-maps .infowindow .country-name, .tooltip-maps .infowindow .bedrooms, .tooltip-maps .infowindow .bathrooms, .tooltip-maps .infowindow .type, .tooltip-maps .infowindow .size{color:#000 !important;}
+		
+		.listings_photo article .buttons a .a-i, .listings_photo .article .buttons a .a-i, .listings_photo article .buttons > span .a-i, .listings_photo .article .buttons > span .a-i {color:#fff!important;}
+		
+		#col-center .module.module_listinglinks li.addthis .a-i {color:#fff!important;}
+		
+	
+	/* Property List View Styles */
+		#module_list .listings .pos.pos_listing .price,
+		#module_list .listings .pos.pos_listing .adr.fn,
+		#module_list .listings .pos.pos_listing .details .bedrooms,
+		#module_list .listings .pos.pos_listing .details .bathrooms,
+		#module_list .listings .pos.pos_listing .details .type,
+		#module_list .listings .pos.pos_listing .details .size,
+		#module_list .listings .pos.pos_listing .details .mls,
+		#module_list .listings .pos.pos_listing .description,
+		#module_list .listings .pos.pos_listing .a-i,
+		#module_list .listings .pos.pos_listing .a-i:hover,
+		.listings article .status,
+		.listings article .status b { color:#fff; }
+
+
+		/* Results Table */
+		#module_map section .listing-mini-address.adr,
+		#module_map section .listing-mini-price .listing-mini-price-body.price.hmoney {color:#fff;}
+
+/* Listing Detail Overview INTERIOR*/
+  .module.module_listing_detail .col-b.address.vcard .adr.fn,
+  .module.module_listing_detail .col-b.address.vcard .price,
+  .pos.pos_listing .price,
+  .pos.pos_listing .adr.fn,
+  .pos.pos_listing .monthly,
+  .pos.pos_listing .details .bedrooms,
+  .pos.pos_listing .details .bathrooms,
+  .pos.pos_listing .details .size,
+  .pos.pos_listing .details .status,
+  .pos.pos_listing .details .mls,
+  #ScheduleAShowingSection label { color:#fff; }
+  /* Listing Detail Overview HOMEPAGE*/
+  #bd_home .module.module_listing_detail .col-b.address.vcard .adr.fn,
+  #bd_home .module.module_listing_detail .col-b.address.vcard .price,
+  #bd_home .pos.pos_listing .price,
+  #bd_home .pos.pos_listing .adr.fn,
+  #bd_home .pos.pos_listing .monthly,
+  #bd_home .pos.pos_listing .details .bedrooms,
+  #bd_home .pos.pos_listing .details .bathrooms,
+  #bd_home .pos.pos_listing .details .size,
+  #bd_home .pos.pos_listing .details .status,
+  #bd_home .pos.pos_listing .details .mls{color:#fff;}
+
+
+		/* Neighborhood Values Results */
+		.module.module_listings.listings_compare .street-address,
+		.module.module_listings.listings_compare .locality,
+		.module.module_listings.listings_compare .region,
+		.module.module_listings.listings_compare .postal-code,
+		.module.module_listings.listings_compare .price { color:#fff; }
+
+
+		/* Office Information */
+		.module.module_offices .adr.fn,
+		.module.module_offices .details {color:#fff;}
+		.module.module_offices #map{height:300px;}
+
+		/* Mortgage Calc Tweaks*/
+		#col-center  .module.module_mortgage .mortgage_calculation { background: transparent; border:0;}
+		.mortgage_calculation div {color:#7A97C3!important;}
+
+		/* Contact Us Tweaks*/
+		.module_offices article, .module_agents article, .agentlistings article {color: #fff;}
+		.module_offices #map.mapContainer { height: 500px;}
+
+		#col-side-b .module.module_localareasearch .content { color: #fff;}
+		#col-side-b .module.module_localareasearch .content li.active a { color: #fff;}
+		#col-side-b .module.module_localareasearch .content ul {background: transparent;}
+		#col-side-b .module.module_localareasearch .content table.header {
+			background: transparent;
+			color: #fff;
+		}
+		#bd_home #container #body #col-side-b .module > footer { background: transparent; }
+/* Log In */		
+.module.module_adminlogin section ul, .module.module_adminlogin .content ul, .module.module_adminlogin section li, .module.module_adminlogin .content li, .module.module_adminlogin section label, .module.module_adminlogin .content label {color:#000!important;}
+
+		
+/* ~~~~~ End Interior Listings ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.btns {width: 980px; height: 110px; margin: 0 auto 0;}
+.btnbox {}
+.btnbox img {margin:0px 45px;}
+
+.QRCode img{height:125px; width:125px;}
+.QRCode {float:right;}
